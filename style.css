@@ -29,6 +29,8 @@ body {
 .left-side {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    flex-wrap: wrap;
 }
 
 .right-side {
@@ -41,6 +43,7 @@ body {
     gap: 24px;
     list-style-type: none;
     margin: 0;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -67,4 +70,80 @@ body {
     padding: 8px 24px;
     text-align: center;
     font-weight: bolder;
+    margin-top: 5px;
+}
+
+.image-container {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin-top: 25px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.secondary-content-container {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+}
+
+.secondary-content-title {
+    color: black;
+    font-weight: bolder;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.secondary-content-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info1, .info2, .info3, .info4 {
+    border-radius: 15px;
+    border: 4px solid #3882F6;
+    height: 125px;
+    width: 125px;
+
+}
+
+.secondary-content-text {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.infotext1, .infotext2, .infotext3, .infotext4 {
+    width: 125px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.third-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    height: 400px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.author {
+    font-weight: bolder;
+    font-size: 24px;
 }
